@@ -11,6 +11,7 @@
 		AD89CBA6296DBBE200966B12 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD89CBA5296DBBE200966B12 /* ContentView.swift */; };
 		AD89CBA8296DBBE400966B12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD89CBA7296DBBE400966B12 /* Assets.xcassets */; };
 		AD89CBAB296DBBE400966B12 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD89CBAA296DBBE400966B12 /* Preview Assets.xcassets */; };
+		AD89CBB6296DBE6300966B12 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD89CBB5296DBE6300966B12 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		AD89CBA5296DBBE200966B12 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AD89CBA7296DBBE400966B12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD89CBAA296DBBE400966B12 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AD89CBB5296DBE6300966B12 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +54,9 @@
 			isa = PBXGroup;
 			children = (
 				AD89CBA3296DBBE200966B12 /* Country_Flag_GameApp.swift */,
-				AD89CBA5296DBBE200966B12 /* ContentView.swift */,
+				AD89CBB4296DBE2F00966B12 /* Models */,
+				AD89CBB3296DBE0900966B12 /* Components */,
+				AD89CBB2296DBD7A00966B12 /* Views */,
 				AD89CBA7296DBBE400966B12 /* Assets.xcassets */,
 				AD89CBA9296DBBE400966B12 /* Preview Content */,
 			);
@@ -65,6 +69,29 @@
 				AD89CBAA296DBBE400966B12 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AD89CBB2296DBD7A00966B12 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AD89CBA5296DBBE200966B12 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AD89CBB3296DBE0900966B12 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		AD89CBB4296DBE2F00966B12 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AD89CBB5296DBE6300966B12 /* Question.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD89CBB6296DBE6300966B12 /* Question.swift in Sources */,
 				AD89CBA6296DBBE200966B12 /* ContentView.swift in Sources */,
 				AD89CBA4296DBBE200966B12 /* Country_Flag_GameApp.swift in Sources */,
 			);
