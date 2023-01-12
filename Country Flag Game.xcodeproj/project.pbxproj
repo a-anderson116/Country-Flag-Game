@@ -16,6 +16,8 @@
 		AD89CBBA296DC11200966B12 /* Progress Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD89CBB9296DC11100966B12 /* Progress Bar.swift */; };
 		AD89CBBC296DC2A200966B12 /* Answer Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD89CBBB296DC2A200966B12 /* Answer Row.swift */; };
 		AD89CBBE296F0DC200966B12 /* QuestionView .swift in Sources */ = {isa = PBXBuildFile; fileRef = AD89CBBD296F0DC200966B12 /* QuestionView .swift */; };
+		AD89CBC029705F2F00966B12 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD89CBBF29705F2F00966B12 /* Data.swift */; };
+		AD89CBC229705FE200966B12 /* QuizManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD89CBC129705FE200966B12 /* QuizManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		AD89CBB9296DC11100966B12 /* Progress Bar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Progress Bar.swift"; sourceTree = "<group>"; };
 		AD89CBBB296DC2A200966B12 /* Answer Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Answer Row.swift"; sourceTree = "<group>"; };
 		AD89CBBD296F0DC200966B12 /* QuestionView .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QuestionView .swift"; sourceTree = "<group>"; };
+		AD89CBBF29705F2F00966B12 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		AD89CBC129705FE200966B12 /* QuizManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 		AD89CBB4296DBE2F00966B12 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AD89CBBF29705F2F00966B12 /* Data.swift */,
+				AD89CBC129705FE200966B12 /* QuizManager.swift */,
 				AD89CBB5296DBE6300966B12 /* Question.swift */,
 			);
 			path = Models;
@@ -180,9 +186,11 @@
 				AD89CBB8296DBFAB00966B12 /* Custom Button.swift in Sources */,
 				AD89CBA6296DBBE200966B12 /* ContentView.swift in Sources */,
 				AD89CBA4296DBBE200966B12 /* Country_Flag_GameApp.swift in Sources */,
+				AD89CBC229705FE200966B12 /* QuizManager.swift in Sources */,
 				AD89CBBE296F0DC200966B12 /* QuestionView .swift in Sources */,
 				AD89CBBA296DC11200966B12 /* Progress Bar.swift in Sources */,
 				AD89CBBC296DC2A200966B12 /* Answer Row.swift in Sources */,
+				AD89CBC029705F2F00966B12 /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
