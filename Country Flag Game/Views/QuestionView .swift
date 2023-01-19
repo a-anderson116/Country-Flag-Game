@@ -28,10 +28,10 @@ struct QuestionView_: View {
                 Image(quizManager.country)
                     .resizable()
                     .frame(width:300, height: 200)
-                Answer_Row(answer: Answer(text: "France", isCorrect: false))
-                Answer_Row(answer: Answer(text: "Germany", isCorrect: false))
-                Answer_Row(answer: Answer(text: "Italy", isCorrect: true))
-                Answer_Row(answer: Answer(text: "England", isCorrect: false))
+                ForEach(quizManager.answerChoices){
+                    answer in Answer_Row(answer: answer)
+                        .environmentObject(quizManager)
+                }
             }
             Button{
                 quizManager.goToNextQuestion()
