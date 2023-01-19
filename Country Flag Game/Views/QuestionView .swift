@@ -8,23 +8,24 @@
 import SwiftUI
 
 struct QuestionView_: View {
+    @EnvironmentObject var quizManager: QuizManager
     var body: some View {
-        VStack(spacing: 20 ){
+        if quizManager.playingGame { VStack(spacing: 20 ){
             HStack{
                 Text("Country Falg Quiz")
                     .foregroundColor(.yellow)
                     .font(.title)
                     .fontWeight(.heavy)
                 Spacer()
-                Text("1 out of 3")
+                Text("\(quizManager.index) out of \(quizManager.questions.count)")
                     .foregroundColor(.yellow)
                     .fontWeight(.heavy)
             }
-            Progress_Bar(progress: 50)
+            Progress_Bar(progress: quizManager.progress)
             VStack(spacing:20){
                 Text("Which country's flag is this?")
                     .font(.title)
-                Image("Italy")
+                Image(quizManager.country)
                     .resizable()
                     .frame(width:300, height: 200)
                 Answer_Row(answer: Answer(text: "France", isCorrect: false))
@@ -32,12 +33,36 @@ struct QuestionView_: View {
                 Answer_Row(answer: Answer(text: "Italy", isCorrect: true))
                 Answer_Row(answer: Answer(text: "England", isCorrect: false))
             }
-            Custom_Button(text: "Next")
+            Button{
+                quizManager.goToNextQuestion()
+            }label: {
+                Custom_Button(text: "Next", background: quizManager.answerSelected ? .yellow : .gray)
+            }
+            .disabled(!quizManager.answerSelected)
             Spacer()
         }
         .padding()
         .frame(width: .infinity, height: .infinity)
         .background(.cyan)
+        }
+        else {
+            VStack (spacing: 20){
+                Text("Country Falg Quiz")
+                    .font(.title)
+                Text("Congratulations! You have demonstrated your skillz.")
+                Text("You Scored \(quizManager.score) out of \(quizManager.questions.count)")
+                Button{
+                    quizManager.reset()
+                } label: {
+                    Custom_Button(text: "Play Again?")
+                }
+            }
+            .foregroundColor(.yellow)
+            .padding()
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(.cyan)
+        }
+        
     }
 }
 
